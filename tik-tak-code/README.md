@@ -9,7 +9,7 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 ```
 
 <p align="center">
-<img src="TOCread.gif" width="700px" height="40px"></p>
+<img src="assets/TOCread.gif" width="700px" height="40px"></p>
 
  🎗[INSTALLATION](#installation) 🎗[LICENSE](#license) 🎗[TESTS](#tests) 🎗[DEPENDENCIES](#dependencies) 🎗[CONTRIBUTE](#contribute) 🎗[CONTACT](#contact)
 <p align="center">
@@ -69,9 +69,12 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 
   
 <p align="center">
-<img src="creditsread.gif" width="300px" height="40px"></p>
+<img src="assets/creditsread.gif" width="300px" height="40px"></p>
 
-  <a href="https://github.com/vivid20221/Tik-Tak-Code" target="_blank"><img src="https://img.shields.io/badge/Github-Tik-Tak-Code-red?style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/Abdul2k24" target="_blank"><img src="https://img.shields.io/badge/Github-Abdul2k24-red?style=for-the-badge&logo=github"></a>     
+  <a href="https://github.com/Huntken26" target="_blank"><img src="https://img.shields.io/badge/Github-Huntken26-blue?style=for-the-badge&logo=github"></a>     
+  <a href="https://github.com/jonsno29" target="_blank"><img src="https://img.shields.io/badge/Github-jonsno29-red?style=for-the-badge&logo=github"></a>    
+  <a href="https://github.com/vivid20221" target="_blank"><img src="https://img.shields.io/badge/Github-vivid20221-blue?style=for-the-badge&logo=github"></a>
 
   
 <div align="center">
@@ -111,17 +114,17 @@ As a group we delevoped a fun game called Tik-Tak-Code!
   
   <img src="https://c.tenor.com/XSbD902n1fwAAAAi/rennen-fast.gif" width="50"><img src="https://c.tenor.com/XSbD902n1fwAAAAi/rennen-fast.gif" width="50"> <img src="https://c.tenor.com/XSbD902n1fwAAAAi/rennen-fast.gif" width="50">  <img src="https://c.tenor.com/XSbD902n1fwAAAAi/rennen-fast.gif" width="50">
   
-  <a href="https://github.com/Abdul2k24" target="_blank"><img src="https://img.shields.io/badge/Github-Abdul2k24-red?style=for-the-badge&logo=github"></a>    <a href="https://github.com/Huntken26" target="_blank"><img src="https://img.shields.io/badge/Github-Huntken26-blue?style=for-the-badge&logo=github"></a>   <a href="https://github.com/jonsno29" target="_blank"><img src="https://img.shields.io/badge/Github-jonsno29-red?style=for-the-badge&logo=github"></a><a href="https://github.com/vivid20221" target="_blank"><img src="https://img.shields.io/badge/Github-vivid20221-blue?style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/Abdul2k24" target="_blank"><img src="https://img.shields.io/badge/Github-Abdul2k24-red?style=for-the-badge&logo=github"></a>     <a href="https://github.com/Huntken26" target="_blank"><img src="https://img.shields.io/badge/Github-Huntken26-blue?style=for-the-badge&logo=github"></a>     <a href="https://github.com/jonsno29" target="_blank"><img src="https://img.shields.io/badge/Github-jonsno29-red?style=for-the-badge&logo=github"></a>     <a href="https://github.com/vivid20221" target="_blank"><img src="https://img.shields.io/badge/Github-vivid20221-blue?style=for-the-badge&logo=github"></a>
 
 🎗 Use the "scout rule" to help others by leaving your code better than you found it.
 
 <p align="center">
 <img src="assets/READMEcontact.gif" width="500px" height="40px"></p>
 
-  [![website](assets/LI-Logo.png)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](assets/LI-Logo.png)](https://www.linkedin.com/in/kenny-hunter-fullstack)
-  [![website](assets/LI-Logo.png)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](assets/LI-Logo.png)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](assets/favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
+  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
 
 ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)![](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)![](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)![](https://img.shields.io/badge/-Sequelize-d3d3d3?style=for-the-badge&logo=sequelize&logoColor=52B0E7)![](https://img.shields.io/badge/-Insomnia-5849BE?style=for-the-badge&logo=insomnia&logoColor=white)
 <footer>
