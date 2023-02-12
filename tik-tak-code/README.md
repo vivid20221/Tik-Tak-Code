@@ -104,7 +104,7 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 </div>
 
 <p align="center">
-<img src="licenseread.gif" width="300px" height="40px"></p>
+<img src="assets/licenseread.gif" width="300px" height="40px"></p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  <p align="center">
