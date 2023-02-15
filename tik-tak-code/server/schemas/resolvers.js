@@ -1,4 +1,4 @@
-const User = require('./models/User');
+const { User } = require('../models');
 const jwt = require('jsonwebtoken');
 const { AuthenticationError } = require('apollo-server-express');
 
@@ -47,14 +47,14 @@ const resolvers = {
     },
   },
 
-  findScore: async (_, { username, score }) => {
-    try {
-      const user = await User.findOneAndUpdate({ username }, { $inc: { [score]: 1 } }, { new: true });
-      return user;
-    } catch (err) {
-      throw new Error(err);
-    }
-  },
+  // findScore: async (_, { username, score }) => {
+  //   try {
+  //     const user = await User.findOneAndUpdate({ username }, { $inc: { [score]: 1 } }, { new: true });
+  //     return user;
+  //   } catch (err) {
+  //     throw new Error(err);
+  //   }
+  // },
 };
 
 module.exports = resolvers;
