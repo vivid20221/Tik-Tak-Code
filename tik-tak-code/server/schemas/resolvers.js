@@ -1,45 +1,60 @@
-//Example from module 21 activity 19
+const User = require('./models/User');
+const jwt = require('jsonwebtoken');
+const { AuthenticationError } = require('apollo-server-express');
 
-// const { Profile } = require('../models');
+const resolvers = {
+  Query: {
+    users: async () => {
+      try {
+        return await User.find();
+      } catch (err) {
+        throw new Error(err);
+      }
+    },
+    user: async (_, { username }) => {
+      try {
+        return await User.findOne({ username });
+      } catch (err) {
+        throw new Error(err);
+      }
+    },
+  },
+  Mutation: {
+    addUser: async (_, { username, email, password }) => {
+      try {
+        const user = await User.create({ username, email, password });
+        const token = jwt.sign({ user: user._id }, process.env.JWT_SECRET);
+        return { user, token };
+      } catch (err) {
+        throw new Error(err);
+      }
+    },
+    login: async (_, { email, password }) => {
+      try {
+        const user = await User.findOne({ email });
+        if (!user) {
+          throw new AuthenticationError('User not found');
+        }
+        const match = await user.matchPassword(password);
+        if (!match) {
+          throw new AuthenticationError('Incorrect password');
+        }
+        const token = jwt.sign({ user: user._id }, process.env.JWT_SECRET);
+        return { user, token };
+      } catch (err) {
+        throw new Error(err);
+      }
+    },
+  },
 
-// const resolvers = {
-//   Query: {
-//     profiles: async () => {
-//       return Profile.find();
-//     },
+  findScore: async (_, { username, score }) => {
+    try {
+      const user = await User.findOneAndUpdate({ username }, { $inc: { [score]: 1 } }, { new: true });
+      return user;
+    } catch (err) {
+      throw new Error(err);
+    }
+  },
+};
 
-//     profile: async (parent, { profileId }) => {
-//       return Profile.findOne({ _id: profileId });
-//     },
-//   },
-
-//   Mutation: {
-//     addProfile: async (parent, { name }) => {
-//       return Profile.create({ name });
-//     },
-//     addSkill: async (parent, { profileId, skill }) => {
-//       return Profile.findOneAndUpdate(
-//         { _id: profileId },
-//         {
-//           $addToSet: { skills: skill },
-//         },
-//         {
-//           new: true,
-//           runValidators: true,
-//         }
-//       );
-//     },
-//     removeProfile: async (parent, { profileId }) => {
-//       return Profile.findOneAndDelete({ _id: profileId });
-//     },
-//     removeSkill: async (parent, { profileId, skill }) => {
-//       return Profile.findOneAndUpdate(
-//         { _id: profileId },
-//         { $pull: { skills: skill } },
-//         { new: true }
-//       );
-//     },
-//   },
-// };
-
-// module.exports = resolvers;
+module.exports = resolvers;
