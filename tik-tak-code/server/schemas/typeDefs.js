@@ -1,25 +1,30 @@
-//Example
+const { gql } = require('apollo-server-express');
 
-// const { gql } = require('apollo-server-express');
+const typeDefs = gql`
+  type User {
+    _id: ID
+    username: String
+    email: String
+    password: String
+    totalWins: Int
+    totalLosses: Int
+  }
 
-// const typeDefs = gql`
-//   type Profile {
-//     _id: ID
-//     name: String
-//     skills: [String]!
-//   }
+  type Auth {
+    token: ID!
+    user: User
+  }
 
-//   type Query {
-//     profiles: [Profile]!
-//     profile(profileId: ID!): Profile
-//   }
+  type Query {
+    users: [User]
+    user(username: String!): User
+  }
 
-//   type Mutation {
-//     addProfile(name: String!): Profile
-//     addSkill(profileId: ID!, skill: String!): Profile
-//     removeProfile(profileId: ID!): Profile
-//     removeSkill(profileId: ID!, skill: String!): Profile
-//   }
-// `;
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+   findScore(username: String!, score: String!): User
+  }
+`;
 
-// module.exports = typeDefs;
+module.exports = typeDefs;
