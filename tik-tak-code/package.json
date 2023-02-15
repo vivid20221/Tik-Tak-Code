@@ -1,7 +1,8 @@
 {
   "name": "tik-tak-code",
   "version": "0.1.0",
-  "private": true,
+  "description": "MERN tic tac toe application",
+  "main": "server/server.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
