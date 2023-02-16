@@ -46,15 +46,6 @@ const resolvers = {
       }
     },
   },
-
-  // findScore: async (_, { username, score }) => {
-  //   try {
-  //     const user = await User.findOneAndUpdate({ username }, { $inc: { [score]: 1 } }, { new: true });
-  //     return user;
-  //   } catch (err) {
-  //     throw new Error(err);
-  //   }
-  // },
 };
 
 module.exports = resolvers;
