@@ -20,6 +20,7 @@ const resolvers = {
     },
   },
   Mutation: {
+    // Takes in the three arguments so that we can create a user for the login
     addUser: async (_, { username, email, password }) => {
       try {
         const user = await User.create({ username, email, password });
@@ -29,6 +30,8 @@ const resolvers = {
         throw new Error(err);
       }
     },
+
+    //takes in email and password so that users can save their scores
     login: async (_, { email, password }) => {
       try {
         const user = await User.findOne({ email });
@@ -45,7 +48,22 @@ const resolvers = {
         throw new Error(err);
       }
     },
-  },
+
+    //Allows the developer to delete user data
+    removeUser: async (_, { userId }) => {
+      return User.findOneAndDelete({ _id: userId });
+    },
+
+    updateUser: async (_, { id, username }) => {
+    // Find and update the matching user using the destructured args
+    return await User.findOneAndUpdate(
+      { _id: id }, 
+      { username },
+      // Return the newly updated object instead of the original
+      { new: true }
+    );
+  }
+}
 };
 
 module.exports = resolvers;

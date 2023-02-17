@@ -20,13 +20,10 @@ const userSchema = new Schema({
     minlength: 7,
   },
 
-  totalWins: {
-    type: Number,
-  },
+  // score: {
+  //   type: Number,
+  // },
 
-  totalLosses: {
-    type: Number,
-},
 });
 
 // set up pre-save middleware to create password
