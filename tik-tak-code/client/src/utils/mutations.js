@@ -10,3 +10,14 @@ export const ADD_USER = gql`
     }
   }
 `;
+
+export const UPDATE_USER = gql`
+  mutation addUser($userId: ID!) {
+    updateUser($userId: ID!) {
+      _id
+      username
+      email
+      password
+    }
+  }
+`;
