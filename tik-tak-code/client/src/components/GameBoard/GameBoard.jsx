@@ -2,14 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Button from "./Button";
 import Square from "./Square";
-//import NavBar from "./components/NavBar";
-//import PaymentForm from "./components/PaymentForm";
-//import StripeContainer from "./components/StripeContainer";
 import { BrowserRouter as View } from "react-router-dom";
-//import TikTakCode from "./components/TikTakCode";
-//import Square from "./components/Icons";
-//import Ai from "./components/Ai";
-//import GameBoard from "./components/GameBoard/GameBoard";
+
 
 function GameBoard() {
   const styles = {

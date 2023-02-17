@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-//import './signup.css';
-//Bootstrap and jQuery libraries
 import 'bootstrap/dist/css/bootstrap.min.css';
-// form and modal modules
+
 import {
   Form,
   Input,
@@ -12,8 +10,7 @@ import {
   AutoComplete,
   Modal
 } from 'antd';
-//import "antd/dist/antd.css";
-//import { QuestionCircleOutlined } from '@ant-design/icons';
+
 class SignUp extends React.Component {
   
   render(){
