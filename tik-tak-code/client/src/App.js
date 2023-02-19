@@ -34,6 +34,7 @@ function App() {
       </View>
     );
   }
+  
   const [squares, setSquares] = useState(Array(9).fill(""));
   const [turn, setTurn] = useState("x");
   const [winner, setWinner] = useState(null);
@@ -81,6 +82,7 @@ function App() {
     const W = checkWinner();
     if (W) {
       setWinner(W);
+  
     } else if (checkEndTheGame()) {
       setWinner("x | o");
     }
