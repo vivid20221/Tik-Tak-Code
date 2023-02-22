@@ -76,6 +76,7 @@ class Login extends React.Component {
           <div>
             <Button
               type="primary"
+              style={{ background: "red"}}
               onClick={() => {
                 setVisible(true);
               }}
