@@ -71,18 +71,42 @@ function App() {
   };
 
   const updateSquares = (ind) => {
-    if (squares[ind] || winner) {
+    if (squares[ind] || winner || turn === "o") {
       return;
     }
-    const s = squares;
+    const s = squares.slice(); // make a copy of the squares array
     s[ind] = turn;
     setSquares(s);
     setTurn(turn === "x" ? "o" : "x");
-    const W = checkWinner();
+    const W = checkWinner(s);
     if (W) {
       setWinner(W);
-    } else if (checkEndTheGame()) {
+    } else if (checkEndTheGame(s)) {
       setWinner("x | o");
+    } else if (turn === "o") {
+      // it's the AI's turn to play
+      let bestScore = -Infinity;
+      let bestMove = null;
+      for (let i = 0; i < squares.length; i++) {
+        if (squares[i] === "") {
+          s[i] = "o";
+          const score = minimax(s, 0, false);
+          s[i] = "";
+          if (score > bestScore) {
+            bestScore = score;
+            bestMove = i;
+          }
+        }
+      }
+      s[bestMove] = "o";
+      setSquares(s);
+      setTurn("x");
+      const winner = checkWinner(s);
+      if (winner) {
+        setWinner(winner);
+      } else if (checkEndTheGame(s)) {
+        setWinner("x | o");
+      }
     }
   };
 
@@ -91,6 +115,54 @@ function App() {
     setTurn("x");
     setWinner(null);
   };
+
+   // Helper function for getting available moves on the board
+   const getAvailableMoves = (board) => {
+    return board.reduce((moves, curr, index) => {
+      if (curr === "") moves.push(index);
+      return moves;
+    }, []);
+  }
+const minimax = (squares, depth, isMaximizingPlayer) => {
+  const winner = checkWinner(squares);
+  if (winner !== null) {
+    if (winner === "x") {
+      return 10 - depth;
+    } else if (winner === "o") {
+      return depth - 10;
+    } else {
+      return 0;
+    }
+  }
+
+  if (checkEndTheGame(squares)) {
+    return 0;
+  }
+
+  if (isMaximizingPlayer) {
+    let bestScore = -Infinity;
+    for (let i = 0; i < squares.length; i++) {
+      if (squares[i] === "") {
+        squares[i] = "x";
+        const score = minimax(squares, depth + 1, false);
+        squares[i] = "";
+        bestScore = Math.max(score, bestScore);
+      }
+    }
+    return bestScore;
+  } else {
+    let bestScore = Infinity;
+    for (let i = 0; i < squares.length; i++) {
+      if (squares[i] === "") {
+        squares[i] = "o";
+        const score = minimax(squares, depth + 1, true);
+        squares[i] = "";
+        bestScore = Math.min(score, bestScore);
+      }
+    }
+    return bestScore;
+  }
+};
 
   return (
     <div className="tic-tac-toe">

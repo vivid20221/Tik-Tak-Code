@@ -112,3 +112,4 @@ function checkWin(board, player) {
       }
       
   
+module.exports = minimax;
