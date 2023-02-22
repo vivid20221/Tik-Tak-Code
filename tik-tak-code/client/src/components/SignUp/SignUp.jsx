@@ -141,12 +141,12 @@ class SignUp extends React.Component {
             scrollToFirstError
           >
             <Form.Item
-                name="Name"
-                label="Name"
+                name="Username"
+                label="Username"
                 rules={[
                   {
                     required: true,
-                    message: 'Please enter Name!',
+                    message: 'Please enter Username!',
                   },
                 ]}
               >
@@ -242,12 +242,13 @@ class SignUp extends React.Component {
           <div>
             <Button
               type="primary"
+              style={{ background: "red"}}
               onClick={() => {
                 setVisible(true);
               }}
             >
               SignUp
-            </Button>
+            </Button> 
             <CollectionCreateForm
               visible={visible}
               onCreate={onCreate}

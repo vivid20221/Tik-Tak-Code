@@ -7,12 +7,13 @@ import GameBoard from "./components/GameBoard/GameBoard";
 const App = () => {
   return (
     <>
-    <Stripe/>
-      <SignUp/> 
-      <Login/>
-      <GameBoard/>
+      <div className="nav">
+        <Stripe />
+        <SignUp />
+        <Login />
+      </div>
+      <GameBoard />
     </>
   );
 };
-
 export default App;
