@@ -86,7 +86,7 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  <p align="center">
-<img src="assets/FCCREAD.gif">
+<img src="tik-tak-code\client\assets\FCCREAD.gif">
 
 🎗 Lets fork eachother:
   
@@ -114,6 +114,6 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)![](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)![](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)![](https://img.shields.io/badge/-Sequelize-d3d3d3?style=for-the-badge&logo=sequelize&logoColor=52B0E7)![](https://img.shields.io/badge/-Insomnia-5849BE?style=for-the-badge&logo=insomnia&logoColor=white)
 <footer>
  <p align="center">
-<img src="banner.svg"/>
+<img src="tik-tak-code\client\banner.svg"/>
 </footer>
 </di>
