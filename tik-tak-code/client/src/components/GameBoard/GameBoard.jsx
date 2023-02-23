@@ -4,7 +4,6 @@ import Button from "./Button";
 import Square from "./Square";
 import { BrowserRouter as View } from "react-router-dom";
 
-
 function GameBoard() {
   const styles = {
     container: {
@@ -63,21 +62,92 @@ function GameBoard() {
     }
     return null;
   };
+  const minimax = (squares, depth, maximizingPlayer) => {
+    const winner = checkWinner(squares);
+    if (winner) {
+      if (winner === "x") return 10 - depth;
+      if (winner === "o") return depth - 10;
+      return 0;
+    }
+    if (checkEndTheGame(squares)) return 0;
+
+    if (maximizingPlayer) {
+      let maxEval = -Infinity;
+      for (let i = 0; i < squares.length; i++) {
+        if (squares[i]) continue;
+        squares[i] = "x";
+        const evaluation = minimax(squares, depth + 1, false);
+        squares[i] = "";
+        maxEval = Math.max(maxEval, evaluation);
+      }
+      return maxEval;
+    } else {
+      let minEval = Infinity;
+      for (let i = 0; i < squares.length; i++) {
+        if (squares[i]) continue;
+        squares[i] = "o";
+        const evaluation = minimax(squares, depth + 1, true);
+        squares[i] = "";
+        minEval = Math.min(minEval, evaluation);
+      }
+      return minEval;
+    }
+  };
 
   const updateSquares = (ind) => {
     if (squares[ind] || winner) {
       return;
     }
-    const s = squares;
-    s[ind] = turn;
-    setSquares(s);
-    setTurn(turn === "x" ? "o" : "x");
-    const W = checkWinner();
+    const newSquares = [...squares];
+    newSquares[ind] = "x";
+    setSquares(newSquares);
+    const W = checkWinner(newSquares);
+    console.log(W)
     if (W) {
+      console.log(W)
       setWinner(W);
-    } else if (checkEndTheGame()) {
+    } else if (checkEndTheGame(newSquares)) {
+      console.log("tie game")
       setWinner("x | o");
+    } else {
+      setTurn("o");
+        // AI uses minimax to find best move
+        const bestMove = getBestMove(newSquares);
+        if (!bestMove) {
+          const emptySquares = newSquares
+            .map((s, i) => (s === "" ? i : null))
+            .filter((i) => i !== null);
+          const randomIndex = Math.floor(Math.random() * emptySquares.length);
+          newSquares[emptySquares[randomIndex]] = "o";
+        } else {
+          newSquares[bestMove] = "o";
+        }
+
+      setSquares(newSquares);
+      const W = checkWinner(newSquares);
+      if (W) {
+        setWinner(W);
+      } else if (checkEndTheGame(newSquares)) {
+        setWinner("x | o");
+      }
+      setTurn("x");
     }
+  };
+
+  const getBestMove = (squares) => {
+    let bestScore = -Infinity;
+    let bestMove = null;
+    for (let i = 0; i < squares.length; i++) {
+      if (squares[i]) continue;
+      squares[i] = "o";
+      const score = minimax(squares, 0, false);
+      squares[i] = "";
+      if (score > bestScore) {
+        bestScore = score;
+        bestMove = i;
+      }
+    }
+    return bestMove;
   };
 
   const resetGame = () => {
