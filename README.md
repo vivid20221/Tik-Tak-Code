@@ -4,10 +4,10 @@
   </div>
 <p align="center">
 
- <img width="500px" height="200px" src="tik-tak-code\client\assets\Screenshot (96).png"/>
-As a group we delevoped a fun game called Tik-Tak-Code!
+ <img width="500px" height="300px" src="tik-tak-code\client\assets\Screenshot (96).png"/>
   </div>
 ```
+<p align='center'>As a group we delevoped a fun game called Tik-Tak-Code!</p>
 ```
 
 <p align="center">
