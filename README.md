@@ -11,21 +11,23 @@ Welcome to Tik-Tak-Code! This MERN app allows you to play against a simple A.I. 
 User story:
 
 * As a user, I want to be able to play the "Tik Tac Code" game on my
- phone or computer, so I can enjoy a fun and interactive experience. 
+ phone or computer, so I can enjoy a fun and interactive experience. I also want to be able to signup/login into the app. Lastly I want to be able to donate to the developers using stripe payments.  
 
  Acceptance Criteria
 
-* It's done when I have created a new repository named `first-day-repo` using the GitHub user interface.
+* Given the user is able to play a game of "Tik Tak Code" with the A.I. on a 3x3 game board.
 
-* It's done when I have cloned the `first-day-repo` to my local machine.
+* Given the user should is able to place X or O pieces on the game board by tapping on the square they want to fill.
 
-* It's done when I have used command-line commands to navigate into the `first-day-repo` directory.
+* Given the game automatically switches turns between the two players as they place their pieces on the board.
 
-* It's done when I have used command-line commands to create an `index.html` file.
+* Given the app declares a winner or a tie at the end of the game.
 
-* It's done when I add and commit my changes using Git commands.
+* GIven the user is able to use the pay with card button to donate to our site.
 
-* It's done when I push the changes to the remote repository.
+* Given the user has the option to play again or return to the main menu after the game has ended.
+
+* GIven the user is able to log in to the app or create a new account.
 ```
 
 <p align="center">
