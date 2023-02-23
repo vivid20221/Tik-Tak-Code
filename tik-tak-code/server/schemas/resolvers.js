@@ -23,8 +23,8 @@ const resolvers = {
     // Takes in the three arguments so that we can create a user for the login
     addUser: async (_, { username, email, password }) => {
       try {
-        const user = await User.create({ username, email, password });
-        const token = jwt.sign({ user: user._id }, process.env.JWT_SECRET);
+        const user = await User.create({ username, email, password });//user
+        const token = jwt.sign({ user: user._id }, process.env.JWT_SECRET);//console.log(token
         return { user, token };
       } catch (err) {
         throw new Error(err);
