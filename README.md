@@ -72,7 +72,7 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 
   
 <p align="center">
-<img src="assets/creditsread.gif" width="300px" height="40px"></p>
+<img src="tik-tak-code\client\assets\creditsread.gif" width="300px" height="40px"></p>
 
   <a href="https://github.com/Abdul2k24" target="_blank"><img src="https://img.shields.io/badge/Github-Abdul2k24-red?style=for-the-badge&logo=github"></a>     
   <a href="https://github.com/Huntken26" target="_blank"><img src="https://img.shields.io/badge/Github-Huntken26-blue?style=for-the-badge&logo=github"></a>     
