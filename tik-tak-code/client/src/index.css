@@ -7,7 +7,7 @@
 body {
     background: rgb(74, 73, 73);
     font-family: consolas;
-     /* background-image: url(../public/pj3br.gif); */
+     background-image: url(../public/pj3br.gif);
 }
 .navBarButtonContainer {
     color: aliceblue;

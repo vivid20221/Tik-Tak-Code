@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 import {
   Form,
   Input,
- Select,
  Checkbox,
   Button,
-  AutoComplete,
+ 
   Modal
 } from 'antd';
 
@@ -15,42 +15,7 @@ class SignUp extends React.Component {
   
   render(){
     // Register Form
-    const { Option } = Select;
-      const AutoCompleteOption = AutoComplete.Option;
-      const residences = [
-        {
-          value: 'zhejiang',
-          label: 'Zhejiang',
-          children: [
-            {
-              value: 'hangzhou',
-              label: 'Hangzhou',
-              children: [
-                {
-                  value: 'xihu',
-                  label: 'West Lake',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          value: 'jiangsu',
-          label: 'Jiangsu',
-          children: [
-            {
-              value: 'nanjing',
-              label: 'Nanjing',
-              children: [
-                {
-                  value: 'zhonghuamen',
-                  label: 'Zhong Hua Men',
-                },
-              ],
-            },
-          ],
-        },
-      ];
+   
       const formItemLayout = {
         labelCol: {
           xs: {
@@ -86,30 +51,7 @@ class SignUp extends React.Component {
         const onFinish = (values) => {
           console.log('Received values of form: ', values);
         };
-        const prefixSelector = (
-          <Form.Item name="prefix" noStyle>
-            <Select
-              style={{
-                width: 70,
-              }}
-            >
-              <Option value="86">+86</Option>
-              <Option value="87">+87</Option>
-            </Select>
-          </Form.Item>
-        );
-        const [autoCompleteResult, setAutoCompleteResult] = useState([]);
-        const onWebsiteChange = (value) => {
-          if (!value) {
-            setAutoCompleteResult([]);
-          } else {
-            setAutoCompleteResult(['.com', '.org', '.net'].map((domain) => `${value}${domain}`));
-          }
-        };
-        const websiteOptions = autoCompleteResult.map((website) => ({
-          label: website,
-          value: website,
-        }));
+        
         return (
           <Modal
           visible={visible}
@@ -134,11 +76,6 @@ class SignUp extends React.Component {
             form={form}
             name="Sign Up"
             onFinish={onFinish}
-            initialValues={{
-              residence: ['zhejiang', 'hangzhou', 'xihu'],
-              prefix: '86',
-            }}
-            scrollToFirstError
           >
             <Form.Item
                 name="Username"
