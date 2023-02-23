@@ -13,13 +13,6 @@
   }
 }
 
-.nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: rgb(2, 3, 2);
-}
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(22, 167, 37);
 }
 
 .App-link {

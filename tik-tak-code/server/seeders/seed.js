@@ -7,9 +7,12 @@ db.once('open', async () => {
     await User.deleteMany({});
     await User.create(userSeeds);
 
-    console.log('all done!');
-    process.exit(0);
+
   } catch (err) {
-    throw err;
+    console.error(err);
+    process.exit(1);
   }
+
+  console.log('all done!');
+  process.exit(0);
 });

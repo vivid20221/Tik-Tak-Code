@@ -1,7 +1,17 @@
 [
   {
-    "username": "kennyG",
+    "username": "KennyG",
     "email": "huntken26@gmail.com",
-    "password": "123ABC"
+    "password": "1234567"
+  },
+  {
+    "username": "TestAccount",
+    "email": "test123@gmail.com",
+    "password": "9876543"
+  },
+  {
+    "username": "theLastofUsername",
+    "email": "tlou@yahoo.com",
+    "password": "joel&ellie"
   }
 ]
