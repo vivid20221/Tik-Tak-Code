@@ -21,3 +21,25 @@ export const LOGIN = gql`
     }
   }
 `;
+
+export const UPDATE_USER = gql`
+  mutation updateUser($id: ID!, $username: String, $email: String, $password: String) {
+    updateUser(id: $id, username: $username, email: $email, password: $password) {
+      id
+      username
+      email
+      password
+    }
+  }
+`;
+
+export const REMOVE_USER = gql`
+  mutation removeUser($id: ID!) {
+    removeUser(id: $id) {
+      id
+      username
+      email
+      password
+    }
+  }
+`;
