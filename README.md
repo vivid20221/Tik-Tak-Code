@@ -99,12 +99,12 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 <p align="center">
 <img src="assets/READMEcontact.gif" width="500px" height="40px"></p>
 
-  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](assets/favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
-  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](assets/favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](tik-tak-code\client\assets\favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
+  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
 
-  🎗 G-MAIL:
+
 
   <a href="mailto:snoverjon@gmail.com"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=snoverjon@gmail.com"/></a>
   <a href="mailto:snoverjon@gmail.com"><img src="https://img.shields.io/badge/Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=snoverjon@gmail.com"/></a>
