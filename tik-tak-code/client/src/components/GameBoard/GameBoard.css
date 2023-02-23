@@ -141,12 +141,3 @@ body {
     display: flex;
     gap: 15px;
 }
-.column {
-    width: 100%;
-  }
-  
-  @media (min-width: 600px) {
-    .column {
-      width: 50%;
-    }
-  }
