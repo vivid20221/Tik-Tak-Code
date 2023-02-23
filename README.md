@@ -3,16 +3,29 @@
   <img width="500px" height="200px" src="tik-tak-code\client\welcome.svg"/>
   </div>
 <p align="center">
-<img src="tik-tak-code\client\assets\userstoryread.gif" width="400px" height="40px"></p>
 
-```
+ <img width="500px" height="200px" src="tik-tak-code\client\assets\Screenshot (96).png"/>
 As a group we delevoped a fun game called Tik-Tak-Code!
+  </div>
+```
 ```
 
 <p align="center">
 <img src="tik-tak-code\client\assets\TOCread.gif" width="700px" height="40px"></p>
 
- 🎗[INSTALLATION](#installation) 🎗[LICENSE](#license) 🎗[TESTS](#tests) 🎗[DEPENDENCIES](#dependencies) 🎗[CONTRIBUTE](#contribute) 🎗[CONTACT](#contact)
+ 
+ 
+ [INSTALLATION](#installation) 
+ 
+ [LICENSE](#license) 
+ 
+ [TESTS](#tests) 
+ 
+ [DEPENDENCIES](#dependencies) 
+ 
+ [CONTRIBUTE](#contribute) 
+ 
+ [CONTACT](#contact)
 <p align="center">
 <img src="tik-tak-code\client\assets\installread.gif" width="500px" height="40px"></p>
 
@@ -97,7 +110,7 @@ As a group we delevoped a fun game called Tik-Tak-Code!
 🎗 Use the "scout rule" to help others by leaving your code better than you found it.
 
 <p align="center">
-<img src="assets/READMEcontact.gif" width="500px" height="40px"></p>
+<img src="tik-tak-code\client\assets\contactus.gif" width="500px" height="40px"></p>
 
   [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
   [![website](tik-tak-code\client\assets\favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
