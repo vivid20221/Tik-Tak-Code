@@ -1,9 +1,9 @@
 <div align="center">
 <div align="center" id="top">
-  <img width="500px" height="200px" src="tik-tak-code\client\welcome.svg"/>
+  <img width="500px" height="200px" src="client\welcome.svg"/>
   </div>
 <p align="center">
-<img src="tik-tak-code\client\assets\userstoryread.gif" width="400px" height="40px"></p>
+<img src="client\assets\userstoryread.gif" width="400px" height="40px"></p>
 
 ```
 Welcome to Tik-Tak-Code! This MERN app allows you to play against a simple A.I. and uses different technologies including the Ant Design UI, React, Stripe payments, Bootstrap, GraphQL, mongoose, etc...
@@ -31,19 +31,19 @@ User story:
 ```
 
 <p align="center">
-<img src="tik-tak-code\client\assets\TOCread.gif" width="700px" height="40px"></p> 
+<img src="client\assets\TOCread.gif" width="700px" height="40px"></p> 
 
  [INSTALLATION](#installation) [LICENSE](#license) [TESTS](#tests) [DEPENDENCIES](#dependencies) [CONTRIBUTE](#contribute) [CONTACT](#contact)
 <p align="center"> <br> <br>
-<img src="tik-tak-code\client\assets\Screenshot (92).png" >
-<img src="tik-tak-code\client\assets\installread.gif" width="500px" height="40px"></p>
+<img src="client\assets\Screenshot (92).png" >
+<img src="client\assets\installread.gif" width="500px" height="40px"></p>
 
 1. Within your terminal Git clone our repository <br>
 2. Open up VS code and use the command "npm i" to install the necessary packages <br>
 3. Now use the command "npm start" to run the app on the local port. <br>
 4. Now you have access to the game via the client side and also the graphQL via the server side. <br> <br> <br>
-<img src="tik-tak-code\client\assets\Screenshot (98).png" ><br><br>
-<img src="tik-tak-code\client\assets\Screenshot (96).png" >
+<img src="client\assets\Screenshot (98).png" ><br><br>
+<img src="client\assets\Screenshot (96).png" >
 <br><br>
 <p style="display: inline-block;" align="center">
 
@@ -112,13 +112,14 @@ Visual Studio Code, etc. <br>
     <img width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" />
 </kbd>
 <p align="center">
-<img src="tik-tak-code\client\assets\livemockup.gif" width="700px" height="40px"></p>
-
- 🎗 <https://github.com/vivid20221/Tik-Tak-Code>
+<img src="client\assets\livemockup.gif" width="700px" height="40px"></p>
+ <p align="center"> <a href ="https://sleepy-peak-49948.herokuapp.com">🎗 Deployed: </p> <br>
+ <p align="center"><a href ="https://youtu.be/xStnfVNxJ9s"> 🎗 Walkthrough Video: </p> <br>
+ <p align="center"> <a href ="https://github.com/vivid20221/Tik-Tak-Code"> 🎗 Repo:</p> <br>
 
   
 <p align="center">
-<img src="tik-tak-code\client\assets\creditsread.gif" width="300px" height="40px"></p>
+<img src="client\assets\creditsread.gif" width="300px" height="40px"></p>
 
   <a href="https://github.com/Abdul2k24" target="_blank"><img src="https://img.shields.io/badge/Github-Abdul2k24-red?style=for-the-badge&logo=github"></a>     
   <a href="https://github.com/Huntken26" target="_blank"><img src="https://img.shields.io/badge/Github-Huntken26-blue?style=for-the-badge&logo=github"></a>     
@@ -128,11 +129,11 @@ Visual Studio Code, etc. <br>
 
 
 <p align="center">
-<img src="tik-tak-code\client\assets\FCCREAD.gif" width="300px" height="40px"></p>
+<img src="client\assets\FCCREAD.gif" width="300px" height="40px"></p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  <p align="center">
-<img src="tik-tak-code\client\assets\FCCREAD.gif">
+<img src="client\assets\FCCREAD.gif">
 
 🎗 Lets fork eachother:
   
@@ -143,10 +144,10 @@ Visual Studio Code, etc. <br>
 🎗 Use the "scout rule" to help others by leaving your code better than you found it.
 
 
-  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](tik-tak-code\client\assets\favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
-  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
-  [![website](tik-tak-code\client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](client\assets\favicon.ico)](https://www.linkedin.com/in/kenny-hunter-fullstack)
+  [![website](client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
+  [![website](client\assets\favicon.ico)](https://linkedin.com/in/jon-snover-b15272110)
 
 
 
@@ -158,6 +159,6 @@ Visual Studio Code, etc. <br>
 ![](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)![](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)![](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)![](https://img.shields.io/badge/-Sequelize-d3d3d3?style=for-the-badge&logo=sequelize&logoColor=52B0E7)![](https://img.shields.io/badge/-Insomnia-5849BE?style=for-the-badge&logo=insomnia&logoColor=white)
 <footer>
  <p align="center">
-<img src="tik-tak-code\client\banner.svg"/>
+<img src="client\banner.svg"/>
 </footer>
 </di>
